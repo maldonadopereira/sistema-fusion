@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+{% include 'partials/_hero.html' %}
+
+    <!-- Services Section Start -->
+    {% include 'partials/_servicos.html' %}
+    <!-- Services Section End -->
+
+    <!-- About Section start -->
+       {% include 'partials/_sobre.html' %}
+    <!-- About Section End -->
+
+    <!-- Features Section Start -->
+    {% include 'partials/_features.html' %}
+    <!-- Features Section End -->   
+
+    <!-- Team Section Start -->
+    {% include 'partials/_equipe.html' %}
+    <!-- Team Section End -->
+
+    <!-- Pricing section Start --> 
+          {% include 'partials/_precos.html' %}
+
+    <!-- Pricing Table Section End -->
+  
+    <!-- Testimonial Section Start -->
+             {% include 'partials/_clientes.html' %}
+
+
+    <!-- Testimonial Section End -->
+
+    <!-- Call To Action Section Start -->
+             {% include 'partials/_chamada.html' %}
+
+    <!-- Call To Action Section Start -->
+
+    <!-- Contact Section Start -->
+             {% include 'partials/_contato.html' %}
+
+    <!-- Contact Section End -->
+
+
+
+    <!-- Go to Top Link -->
+    <a href="{% url 'index' %}" class="back-to-top">
+    	<i class="lni-arrow-up"></i>
+    </a>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+{% endblock %}
